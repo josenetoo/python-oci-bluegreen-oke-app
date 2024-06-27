@@ -7,8 +7,8 @@ import os
 app = FastAPI()
 
 
-@app.get("/")
+@app.get("/bluegreen")
 def read_root():
-    version="1.0"
+    version="0.0"
     namespace = os.getenv('POD_NAMESPACE', default = 'ns-red')
     return {"Message": "DevOps Heroes - OCI Devops","Version":version,"Namespace":namespace}
