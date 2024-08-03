@@ -15,7 +15,7 @@ spec:
       containers:
         - name: sample-oke-bg-app
           # enter the path to your image, be sure to include the correct region prefix
-          image: vcp.ocir.io/ax5b2hhr8y7h/python-bg-oke:${BUILDRUN_HASH}
+          image: vcp.ocir.io/idi1o0a010nx/python-bg-oke:${BUILDRUN_HASH}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
